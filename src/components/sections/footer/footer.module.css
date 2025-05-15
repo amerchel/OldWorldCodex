@@ -1,0 +1,42 @@
+@import "../../../vars.css";
+
+/*.footer{
+    position: static;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    background-color: var(--color-bg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}*/
+
+.footer {
+    position: relative;
+    margin-top: -8rem; /* ujemny margines w górę */
+    height: 8rem;
+    background-color: var(--color-bg);
+    color: var(--color-secondary);
+    text-align: center;
+    z-index: 10;
+}
+
+
+.img{
+    width: 3.5rem;
+    height: auto;
+    margin: 0.5rem;
+}
+
+.description{
+    font-size: 0.7rem;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.copyright{
+    font-size: 0.7rem;
+    color: var(--color-secondary);
+    margin-bottom: 0.4rem;
+}

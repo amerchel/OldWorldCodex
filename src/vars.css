@@ -7,5 +7,6 @@
     --color-bg: #262626;
 
     /* Fonts */
-    --font-dm-sans: 'DM Sans;'
+    --font-dm-sans: 'DM Sans', sans-serif;
+    --font-awesome: 'FontAwesome', sans-serif;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styles from "./hero.module.css"
-import { getImageUrl } from "../../utils.js";
+import styles from "./hero.module.css";
+import { getImageUrl } from "../../../utils.js";
 
 export const Hero = () => {
     return (
@@ -10,7 +10,7 @@ export const Hero = () => {
             <div className={styles.content}>
                     <h1 className={styles.title}>Przeznaczenie wzywa</h1>
                     <p className={styles.description}>Miło Cię widzieć, podróżniku!</p>
-                    <p className={styles.description}>Zanurz się w mroczny, pełen magii i niebezpieczeństw świat Wiedźmina.
+                    <p className={styles.descriptionText}>Zanurz się w mroczny, pełen magii i niebezpieczeństw świat Wiedźmina.
                         Tutaj każda decyzja ma znaczenie, a przygoda czai się za każdym rogiem.
                         Przygotuj miecze, wypij eliksir i ruszaj ku przeznaczeniu!</p>
             </div>

@@ -1,4 +1,4 @@
-@import "../../vars.css";
+@import "../../../vars.css";
 
 .container {
     position: relative;
@@ -12,6 +12,7 @@
     height: 100vh;
     transform: translateY(-4.3rem);
     overflow: hidden;
+    background-attachment: fixed;
 }
 
 .content {
@@ -35,6 +36,11 @@
 }
 
 .description {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.descriptionText {
     font-size: 1.8rem;
     margin-bottom: 3rem;
 }
@@ -65,6 +71,7 @@
     }
 }
 
+
 @media screen and (max-width: 830px) {
     .container {
         flex-direction: column-reverse;
@@ -86,13 +93,19 @@
         font-size: 3rem;
         padding-top: 1rem;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
-    .description {
+    .description{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+    .descriptionText {
         font-size: 1.25rem;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 5.5rem;
     }
 
     .heroImg {

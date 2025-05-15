@@ -1,18 +1,24 @@
 
 import styles from "./App.module.css"
 
-import "@fontsource/roboto"
-import "@fontsource/outfit"
-import "@fontsource/dm-sans"
-import {Navbar} from "./components/navbar/Navbar.jsx";
-import {Hero} from "./components/hero/hero.jsx";
-import {About} from "./components/about/about.jsx";
+import "@fontsource/dm-sans/400.css";
+import "@fontsource/dm-sans/600.css";
+import "@fontsource/dm-sans/700.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+import {Navbar} from "./components/sections/navbar/Navbar.jsx";
+import {Hero} from "./components/sections/hero/hero.jsx";
+import {About} from "./components/sections/about/about.jsx";
+import {Outro} from "./components/sections/outro/outro.jsx";
+import {Footer} from "./components/sections/footer/footer.jsx";
 
 function App() {
   return <div className={styles.App}>
     <Navbar />
     <Hero />
     <About />
+    <Outro />
+    <Footer />
   </div>
 
 }
