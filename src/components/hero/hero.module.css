@@ -5,37 +5,47 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 49px;
+    width: 100%;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
     z-index: 1;
-    margin-right: 10%;
-    margin-left: 10%;
+    height: 100vh;
+    transform: translateY(-4.3rem);
+    overflow: hidden;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: var(--color-secondary);
     z-index: 1;
+    flex: 1;
+    max-width: 50%;
+    padding-left: 4rem;
 }
 
-.title{
-    font-size: 72px;
+.title {
+    font-size: 4.5rem;
     font-weight: 600;
-    margin-bottom: 33px;
-    background: linear-gradient(90deg, rgba(234, 195, 96, 1) 70%, rgba(234, 195, 96, 0) 120%);
+    margin-bottom: 3rem;
+    background: linear-gradient(90deg, rgba(234, 195, 96, 0.9) 40%, rgba(234, 195, 96, 0) 110%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.description{
-    font-size: 30px;
-    margin-bottom: 52px;
+.description {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
 }
 
 .heroImg {
-    width: 70%;
+    width: clamp(20rem, 40vw, 36rem);
+    height: auto;
     z-index: 1;
+    align-self: center;
+    flex: 1;
+    padding-bottom: 3rem;
 
     animation-name: floating;
     animation-duration: 3s;
@@ -45,22 +55,53 @@
 
 @keyframes floating {
     0% {
-        transform: translate(0, 0px);
+        transform: translate(0, 0);
     }
     50% {
-        transform: translate(0, 10px);
+        transform: translate(0, 0.75rem);
     }
     100% {
-        transform: translate(0, -0px);
+        transform: translate(0, 0);
     }
 }
 
 @media screen and (max-width: 830px) {
     .container {
         flex-direction: column-reverse;
+        height: 100vh;
+        padding-top: 2rem;
+        padding-bottom: 6rem;
+        transform: none;
     }
 
     .content {
         align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        flex: none;
+        padding: 0;
+    }
+
+    .title {
+        font-size: 3rem;
+        padding-top: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .description {
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .heroImg {
+        width: 100%;
+        max-width: 30rem;
+        aspect-ratio: 3 / 2;
+        object-fit: contain;
+        margin: 0 auto 0.1rem auto;
+        padding: 0 0.1rem;
+        box-sizing: border-box;
     }
 }

@@ -1,37 +1,66 @@
 @import "../../vars.css";
+.hero{
+    position: relative;
+    height: 100vh;
+}
 
 .navbar {
-    position: relative;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-bg);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 61px;
+    padding: 1.5rem 2rem; /* top right bottom left 5% 8% */
     z-index: 2;
-    margin: 0 10%;
+}
+
+.logoTitle{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
 }
 
 .title{
-    font-size: 30px;
+    font-size: 2.5rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--color-primary);
+    align-self: center;
 }
 
 .menu{
     display: flex;
-
 }
 
 .menuItems{
     display: flex;
-    gap: 47px;
+    gap: 2.3rem;
     list-style: none;
 }
 
+.menuItems li{
+    display: block;
+}
+
 .menuItems a{
-    font-size: 25px;
+    font-size: 1.75rem;
     color: var(--color-secondary);
     text-decoration: none;
+
+    padding: 1rem 1rem;
+    display: block;
+    border-radius: 0.4rem;
+    transition: background 0.2s ease;
+}
+
+.menuItems a:hover,
+.menuItems a:focus{
+    background: linear-gradient(90deg, rgba(234, 195, 96, 0.9) 40%, rgba(234, 195, 96, 0) 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .menuBtn{
@@ -47,10 +76,10 @@
     .menu{
         position: absolute;
         right: 0;
-        margin-right: 10%;
+        margin-right: 2rem;
         flex-direction: column;
         align-items: flex-end;
-        gap: 11px;
+        gap: 0.7rem;
         z-index: 3;
     }
 
@@ -63,16 +92,31 @@
         display: none;
         flex-direction: column;
         align-items: center;
-        gap: 13px;
-        border-radius: 10px;
+        gap: 0.8rem;
+        border-radius: 0.6rem;
         background: rgb(234, 195, 96);
         background: linear-gradient(0deg, rgba(234, 195, 96, 0.3) 0%, rgba(234, 195, 96, 1) 100%);
-        padding: 24px 33px;
+        padding: 1.5rem 2rem;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     }
 
     .menuOpen{
         display: flex;
         z-index: 1;
+    }
+
+    .logotTitle{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logoImg{
+        display: block;
+        width: 3rem;
+        height: auto;
+    }
+
+    .title{
+        font-size: 1.8rem;
     }
 }
